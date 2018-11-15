@@ -1,5 +1,5 @@
 <h1>Battle!</h1>
-<h2><%= @player_1_name %> vs. <%= @player_2_name %></h2>
+<h2><%= @player_1_name + " HP:" + @player_1_hp.to_s %> vs. <%= @player_2_name + " HP:" + @player_2_hp.to_s %></h2>
 <h3> <%= @player_1_name %> click attack to hit <%= @player_2_name %></h3>
 <form action="/first_attack">
   <input type="submit" value="attack">
