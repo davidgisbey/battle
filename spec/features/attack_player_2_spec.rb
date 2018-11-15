@@ -1,4 +1,4 @@
-require './app'
+require 'spec_helper'
 
 feature 'player 1 can attack' do
   it "player 1 can attack player 2 and receives confirmation" do
