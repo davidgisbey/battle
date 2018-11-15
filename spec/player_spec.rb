@@ -8,4 +8,9 @@ describe Player do
   it "has HP" do
     expect(subject.hp).to eq 60
   end
+
+  it "reduces hp when reduce health is called" do
+    subject.reduce_health(10)
+    expect(subject.hp).to eq(50)
+  end
 end
