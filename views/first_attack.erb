@@ -1,3 +1,7 @@
 <h1>Battle!</h1>
-<h2><%= @player_1_name + " HP:" + @player_1_hp.to_s %> vs. <%= @player_2_name + " HP:" + @player_2_hp.to_s %></h2>
-<h3> <%= @player_1_name %> hit <%= @player_2_name %> for 10</h3>
+<h2><%= @on_turn_player.name + " HP:" + @on_turn_player.hp.to_s %> vs. <%= @off_turn_player.name + " HP:" + @off_turn_player.hp.to_s %></h2>
+<h3> <%= @attacking_player.name %> hit <%= @defending_player.name %> for 10</h3>
+<h3> <%= @on_turn_player.name %> click attack to hit <%= @off_turn_player.name %></h3>
+<form action="/first_attack">
+  <input type="submit" value="attack">
+</form>
